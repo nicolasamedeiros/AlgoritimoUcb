@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+//programa que calcula minutos e segudos de determinada hora
+
 int main () {
     int horas, minutos, segundos;
     printf("Digite a quantidade de horas: ");
