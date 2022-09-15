@@ -1,4 +1,8 @@
 #include<stdio.h>
+#include<math.h>
+
+//declarar variavel constante (não muda)
+#define PI 3.14
 
 int main () {
     int diametro, raio;
@@ -6,6 +10,6 @@ int main () {
     printf("Digite o valor do diametro do circulo: ");
     scanf("%d", &diametro);
     raio = diametro / 2;
-    result = 3.14 * (raio*raio);
+    result = PI * pow(raio,2);
     printf("O valor da area e de %.2f", result);
 }
