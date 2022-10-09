@@ -32,7 +32,11 @@ int main() {
                 result = num1 * num2;
                 printf("O resultado da multiplicacao e: %f", result);
                 break;
+                    case '/':
+                    result = num1 / num2;
+                    printf("O resultadp da divisao e: %f", result);
     default:
+        printf("Impossivel fazer o calculo");
         break;
     }
 }
