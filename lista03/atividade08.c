@@ -18,16 +18,20 @@ int main() {
     else if (strcmp(estado, "SP") == 0) {
         valFinal = valProduto + (valProduto*0.12);
         printf("O valor final do produto e: R$%.2f", valFinal);
+        return 0;
     }
     else if (strcmp(estado, "RJ") == 0) {
         valFinal = valProduto + (valProduto*0.15);
         printf("O valor final do produto e: R$%.2f", valFinal);
+        return 0;
     }
     else if (strcmp(estado, "MS") == 0) {
         valFinal = valProduto + (valProduto*0.08);
         printf("O valor final do produto e: R$%.2f", valFinal);
+        return 0;
     }
     else {
         printf("Estado nao encontrado no banco de dados");
+        return 0;
     }
 }
