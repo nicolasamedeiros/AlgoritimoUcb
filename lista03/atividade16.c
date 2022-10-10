@@ -22,21 +22,22 @@ int main() {
     {
     case '+':
         result = num1 + num2;
-        printf("O resultado da adicao e: %f", result);
+        printf("O resultado da adicao e: %.2f", result);
         break;
             case '-':
             result = num1 - num2;
-            printf("O resultado da subtracao e: %f", result);
+            printf("O resultado da subtracao e: %.2f", result);
             break;
                 case '*':
                 result = num1 * num2;
-                printf("O resultado da multiplicacao e: %f", result);
+                printf("O resultado da multiplicacao e: %.2f", result);
                 break;
                     case '/':
                     result = num1 / num2;
-                    printf("O resultadp da divisao e: %f", result);
-    default:
-        printf("Impossivel fazer o calculo");
-        break;
+                    printf("O resultadp da divisao e: %.2f", result);
+                    break;
+                        default:
+                        printf("Impossivel fazer o calculo");
+                        break;
     }
 }
