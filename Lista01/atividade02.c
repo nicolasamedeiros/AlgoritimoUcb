@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<math.h>
 
-//declarar variavel constante (não muda)
 #define PI 3.14
 
 int main () {
