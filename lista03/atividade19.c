@@ -19,4 +19,5 @@ int main () {
     media = (n1*2) + (n2*3) + (n3*4) + (n4*1) / (2 + 3 + 4 + 1);
 
     printf("Media: %.2f", media);
+    printf("Salve");
 }
