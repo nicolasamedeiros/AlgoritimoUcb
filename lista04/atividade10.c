@@ -1,14 +1,35 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main() {
-    int num, result;
+int main(){
 
-    for (int i = 0; i < 10; i++) {
-        printf("Digite um valor: ");
-        scanf("%d", &num);
+int num, a = 0;
 
-        if (num >= 0) {
-            result = num / 10;
-        }
-    }
+float media = 0;
+
+printf("Digite 10 números inteiros positivos: ");
+
+for (int i = 1; i <= 10; i++){
+
+printf("\n%d - ", i);
+
+scanf("%d", &num);
+
+while(num<=0){
+
+printf("Numero nao positivo. \n%d ", i);
+
+scanf("%d", &num);
+
+}
+
+a = a+num;
+
+}
+
+media = a/10;
+
+printf("\nmedia dos numeros %.2f", media);
+
+return 0;
+
 }
