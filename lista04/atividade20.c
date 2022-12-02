@@ -1,21 +1,40 @@
-#include<stdio.h>
+#include <stdio.h>
+#include<math.h>
+int main(){
+    int iniciar, repetir, m, a, p, soma1;
 
-int main() {
-    int soma = 0, num_frut, quant, cont;
+    printf("ABACAXI  5,00 a unidade \n2 MAcA  1,00 a unidade \n3 PERA  4,00 a unidade");
+    printf("\nDeseja iniciar compra? 1p/sim 2 p/ nao");
+    scanf("%d", &iniciar);
+
+
+    while( iniciar == 1){
+    printf("Quantas macas voce quer?");
+    scanf("%d", &m);
+    printf("Quantas peras voce quer?");
+    scanf("%d", &p);
+    printf("Quantos abacaxi voce quer?");
+    scanf("%d", &a);
     
-    do
-    {
-        printf("1 => ABACAXI 5,00 a unidade\n");
-        printf("2 => MAÇA 1,00 a unidade\n");
-        printf("3 => PERA 4,00 a unidade\n");
-        printf("Digite o numero da fruta que deseja comprar: ");
-        scanf("%d", &num_frut);
-        if (num_frut == 1)
-        {
-            printf("Digite a quantidade de abacaxi que deseja: ");
-            scanf("%d", &quant);
-            soma += 
-        }
-        
-    } while (cont == -1);
+    printf("\nDeseja repetir?1p/sim 2 p/ nao");
+    scanf("%d", &repetir);
+
+    if(repetir==1){
+
+     printf("Quantas macas voce quer?");
+    scanf("%d", &m);
+    printf("Quantas peras voce quer?");
+    scanf("%d", &p);
+    printf("Quantos abacaxi voce quer?");
+    scanf("%d", &a);
+    
+    printf("Deseja repetir?1p/sim 2 p/ nao");
+    scanf("%d", &repetir);}
+    
+    if(repetir==2){
+        soma1= 1*m + 5*a+ 4*p;
+        printf("o valor e %d\n", soma1);break;}
+    
+    } 
+
 }
